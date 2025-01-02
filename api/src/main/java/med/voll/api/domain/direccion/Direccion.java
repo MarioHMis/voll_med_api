@@ -1,4 +1,5 @@
 package med.voll.api.domain.direccion;
+
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,8 +16,6 @@ public class Direccion {
     private String complemento;
     private String distrito;
     private String ciudad;
-
-
 
     public Direccion(DatosDireccion direccion) {
         this.calle = direccion.calle();
